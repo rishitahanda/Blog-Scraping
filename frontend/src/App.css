@@ -1,0 +1,56 @@
+body {
+  background-color: #f4f6f8;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Card base */
+.card {
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background: #ffffff;
+  line-height: 1.6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Original article */
+.card.original {
+  border-left: 6px solid #b0bec5;
+}
+
+/* AI updated article */
+.card.updated {
+  border-left: 6px solid #4caf50;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Badge color for updated */
+.card.updated .badge {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
