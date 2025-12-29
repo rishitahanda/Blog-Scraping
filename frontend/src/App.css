@@ -1,56 +1,96 @@
+/* Global reset & background */
 body {
+  margin: 0;
+  padding: 0;
   background-color: #f4f6f8;
 }
 
+/* Main container */
 .container {
-  max-width: 900px;
+  max-width: 950px;
   margin: auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  padding: 30px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Page heading */
 h1 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  color: #222;
+  font-weight: 600;
 }
 
-/* Card base */
+/* Article card base */
 .card {
-  padding: 20px;
-  margin-bottom: 25px;
-  border-radius: 10px;
+  padding: 22px 24px;
+  margin-bottom: 28px;
+  border-radius: 12px;
   background: #ffffff;
-  line-height: 1.6;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  line-height: 1.7;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Original article */
+/* Subtle hover effect */
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* Original article styling */
 .card.original {
   border-left: 6px solid #b0bec5;
 }
 
-/* AI updated article */
+/* AI-enhanced article styling */
 .card.updated {
   border-left: 6px solid #4caf50;
 }
 
-/* Badge */
+/* Badge label */
 .badge {
   display: inline-block;
-  margin-bottom: 10px;
-  padding: 5px 10px;
+  margin-bottom: 12px;
+  padding: 6px 14px;
   font-size: 12px;
-  border-radius: 20px;
+  font-weight: 500;
+  border-radius: 999px;
   background-color: #e0e0e0;
   color: #333;
 }
 
-/* Badge color for updated */
+/* Badge color for AI articles */
 .card.updated .badge {
   background-color: #e8f5e9;
   color: #2e7d32;
 }
 
+/* Article title */
 .card h2 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #111;
+}
+
+/* Article content */
+.card p {
+  margin: 0;
+  color: #444;
+  font-size: 15.5px;
+}
+
+/* Responsive spacing */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
 }

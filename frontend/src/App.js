@@ -21,8 +21,8 @@ function App() {
 
         return (
           <div
-            className={`card ${isUpdated ? "updated" : "original"}`}
             key={article._id}
+            className={`card ${isUpdated ? "updated" : "original"}`}
           >
             <div className="badge">
               {isUpdated ? "AI-Enhanced Article" : "Original Article"}
@@ -38,4 +38,3 @@ function App() {
 }
 
 export default App;
-
